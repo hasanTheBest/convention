@@ -68,10 +68,51 @@ h6,
 .ec-dark {
   color: var(--ec-dark);
 }
+.ec-light {
+  color: var(--ec-light);
+}
 .ec-text-shadow {
   color: var(--ec-dark);
 }
 
+/* Hover effect */
+.btn {
+  position: relative;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btn > span {
+  z-index: 5;
+  position: relative;
+}
+
+.btn::before,
+.btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: calc(50% + 2px);
+  height: 100%;
+  background-color: var(--ec-red);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+.btn::before {
+  left: 0;
+}
+
+.btn::after {
+  right: 0;
+}
+
+.btn:hover::before {
+  left: -51%;
+}
+.btn:hover::after {
+  right: -51%;
+}
 body {
   padding-top: 3.5rem; /* for fixed navbar */
 }
@@ -91,10 +132,22 @@ body {
 
 /* Banner */
 .banner-wrapper .carousel-item {
-  background-image: url("images/pexels-fu-zhichao-587741.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-color: var(--bs-purple);
   background-blend-mode: multiply;
+}
+
+.banner-wrapper .carousel-item:nth-child(1) {
+  background-image: url("images/banner/banner-1.jpg");
+}
+.banner-wrapper .carousel-item:nth-child(2) {
+  background-image: url("images/banner/banner-2.jpg");
+}
+.banner-wrapper .carousel-item:nth-child(3) {
+  background-image: url("images/banner/banner-3.jpg");
+}
+
+.banner-wrapper .carousel-item:nth-child(4) {
+  background-image: url("images/banner/banner-2.jpg");
 }
