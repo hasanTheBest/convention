@@ -151,3 +151,17 @@ body {
 .banner-wrapper .carousel-item:nth-child(4) {
   background-image: url("images/banner/banner-4.jpg");
 }
+
+/* Package Section */
+.packages-section .ec-card-row > .col:nth-child(1) .btn::before,
+.packages-section .ec-card-row > .col:nth-child(1) .btn::after {
+  background-color: var(--ec-green);
+}
+.packages-section .ec-card-row > .col:nth-child(2) .btn::before,
+.packages-section .ec-card-row > .col:nth-child(2) .btn::after {
+  background-color: var(--ec-orange);
+}
+.packages-section .ec-card-row > .col:nth-child(4) .btn::before,
+.packages-section .ec-card-row > .col:nth-child(4) .btn::after {
+  background-color: var(--ec-blue);
+}
