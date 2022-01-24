@@ -1,3 +1,15 @@
+:root {
+  --ec-red: #ff2d55;
+  --ec-blue: #00acee;
+  --ec-orange: #efa506;
+  --ec-green: #8dc63f;
+  --ec-dark: #0d1028;
+  --ec-light: #f5f4f7;
+  --ec-gray: #707070;
+  --ec-shadow-text: #edeaf6;
+  --ec-heading-font: "Raleway", sans-serif;
+}
+
 /* Heading Font */
 h1,
 h2,
@@ -13,13 +25,71 @@ h6,
 .h6,
 .display-1,
 .display-2 {
-  font-family: "Raleway", sans-serif;
+  font-family: var(--ec-heading-font);
+  font-weight: 500;
 }
 
-/* Banner Wrapper */
-.banner-wrapper {
-  /* width: 100vw; */
+/* Utilities */
+/* Background */
+.ec-bg-dark {
+  background-color: var(--ec-dark);
 }
+.ec-bg-red {
+  background-color: var(--ec-red);
+}
+.ec-bg-green {
+  background-color: var(--ec-green);
+}
+.ec-bg-blue {
+  background-color: var(--ec-blue);
+}
+.ec-bg-orange {
+  background-color: var(--ec-orange);
+}
+.ec-bg-light {
+  background-color: var(--ec-light);
+}
+.ec-bg-dark {
+  background-color: var(--ec-dark);
+}
+/* Text */
+.ec-gray {
+  color: var(--ec-dark);
+}
+.ec-red {
+  color: var(--ec-red);
+}
+.ec-blue {
+  color: var(--ec-blue);
+}
+.ec-orange {
+  color: var(--ec-orange);
+}
+.ec-dark {
+  color: var(--ec-dark);
+}
+.ec-text-shadow {
+  color: var(--ec-dark);
+}
+
+body {
+  padding-top: 3.5rem; /* for fixed navbar */
+}
+
+/* Navigation */
+.ec-navbar .nav-item .nav-link {
+  font-weight: 500;
+  letter-spacing: 1.25px;
+  font-family: var(--ec-heading-font);
+}
+
+.ec-navbar .nav-item .nav-link:focus,
+.ec-navbar .nav-item .nav-link:active,
+.ec-navbar .nav-item .nav-link:hover {
+  color: var(--ec-red);
+}
+
+/* Banner */
 .banner-wrapper .carousel-item {
   background-image: url("images/pexels-fu-zhichao-587741.jpg");
   background-repeat: no-repeat;
