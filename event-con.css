@@ -15,3 +15,16 @@ h6,
 .display-2 {
   font-family: "Raleway", sans-serif;
 }
+
+/* Banner Wrapper */
+.banner-wrapper {
+  /* width: 100vw; */
+}
+.banner-wrapper .carousel-item {
+  background-image: url("images/pexels-fu-zhichao-587741.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--bs-purple);
+  background-blend-mode: multiply;
+}
