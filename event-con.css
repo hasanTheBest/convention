@@ -165,3 +165,62 @@ body {
 .packages-section .ec-card-row > .col:nth-child(4) .btn::after {
   background-color: var(--ec-blue);
 }
+
+/* Team Sections */
+.team-section {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.team-section .member {
+  overflow: hidden;
+}
+.team-section .member > img {
+  transition: all 0.5s ease;
+}
+.team-section .member > img:hover {
+  transform: scale(1.1);
+  filter: grayscale(0.8);
+}
+.team-section .member > .designation {
+  background-color: rgba(255, 255, 255, 0.6);
+  margin-bottom: -2rem;
+  opacity: 0;
+  transition: all 0.5s ease;
+}
+.team-section .member:hover .designation {
+  opacity: 1;
+  margin-bottom: 0;
+}
+.team-section .social-icons {
+  opacity: 0;
+  margin-right: -2rem;
+  transition: all 0.5s ease;
+}
+.team-section .member:hover .social-icons {
+  opacity: 1;
+  margin-right: 0;
+}
+.social-icons > a {
+  display: flex;
+  flex-direction: column;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: var(--ec-red);
+  margin-bottom: 0.5rem;
+  transition: all 0.3s ease;
+}
+
+.team-section .social-icons > a:hover {
+  background-color: var(--ec-blue);
+  cursor: pointer;
+}
+.team-section .social-icons > a > img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0.5rem auto;
+}
+/* Footer */
+footer {
+  background-color: #0c0d17;
+}
