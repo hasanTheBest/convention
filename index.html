@@ -26,7 +26,7 @@
   </head>
   <body>
     <!-- ============== Header ================== -->
-    <header>
+    <header id="to-home">
       <!-- Navigation -->
       <nav
         class="navbar navbar-expand-lg ec-bg-dark ec-red fixed-top navbar-dark ec-navbar"
@@ -51,19 +51,19 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#to-home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">About</a>
+                <a class="nav-link" aria-current="page" href="#to-about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Pricing</a>
+                <a class="nav-link" aria-current="page" href="#to-package">Pricing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Team</a>
+                <a class="nav-link" aria-current="page" href="#to-team">Team</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Gallery</a>
+                <a class="nav-link" aria-current="page" href="#to-question">Asks</a>
               </li>
             </ul>
             <button class="btn ec-bg-dark text-white ms-2">
@@ -123,17 +123,17 @@
                     <span class="ec-red">H</span>ub of <br />
                     <span class="ec-blue">E</span>ntertainment
                   </h1>
-                  <p class="h6 ec-light mb-4">
+                  <p class="h6 ec-light mb-4 d-none d-md-block">
                     One of the original and leading convention center <br />
                     for gathering and sharing emotions making it easier to
                     explore
                   </p>
 
-                  <button
+                  <a href="https://www.occc.net/" target="_blank"
                     class="btn ec-bg-dark btn-lg text-uppercase text-white rounded-0 border-0 shadow-sm"
                   >
                     <span class="d-bloc">Book Now</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -149,16 +149,16 @@
                     <span class="ec-red">S</span>pecial
                     <span class="ec-blue">M</span>oment
                   </h1>
-                  <p class="h6 ec-light mb-4">
+                  <p class="h6 ec-light mb-4 d-none d-md-block">
                     The award-winning convention center with step-by-step <br />
                     walking directions,a building directory, parking locations
                   </p>
 
-                  <button
+                  <a href="https://www.occc.net/" target="_blank"
                     class="btn ec-bg-dark btn-lg text-uppercase text-white rounded-0 border-0 shadow-sm"
                   >
-                    <span class="d-bloc">Book Now</span>
-                  </button>
+                    <span class="d-block">Book Now</span>
+                  </a>
                 </div>
               </div>
             </div>
@@ -174,17 +174,17 @@
                     <span class="ec-red">P</span>arties <br />
                     <span class="ec-blue">C</span>elebrations
                   </h1>
-                  <p class="h6 ec-light mb-4">
+                  <p class="h6 ec-light mb-4 d-none d-md-block">
                     Averaged nearly 200 events, including 115 conventions
                     <br />
                     and tradeshows that attract more than 1.5 million
                   </p>
 
-                  <button
+                  <a href="https://www.occc.net/" target="_blank"
                     class="btn ec-bg-dark btn-lg text-uppercase text-white rounded-0 border-0 shadow-sm"
                   >
                     <span class="d-bloc">Book Now</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -200,17 +200,17 @@
                     <span class="ec-blue">W</span>eedings <br />
                     <span class="ec-orange">C</span>onferences <br />
                   </h1>
-                  <p class="h6 ec-light mb-4">
+                  <p class="h6 ec-light mb-4 d-none d-md-block">
                     Averaged nearly 200 events, including 115 conventions
                     <br />
                     and tradeshows that attract more than 1.5 million
                   </p>
 
-                  <button
+                  <a href="https://www.occc.net/" target="_blank"
                     class="btn ec-bg-dark btn-lg text-uppercase text-white rounded-0 border-0 shadow-sm"
                   >
                     <span class="d-bloc">Book Now</span>
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -219,8 +219,9 @@
       </div>
     </header>
 
-    <div class="about-section">
-      <h2 class="h1 py-5 text-center">About Us</h2>
+    <!-- ========== About ========= -->
+    <section id="to-about" class="about-section py-5">
+      <h2 class="h1 py-5 text-center ec-dark">About Us</h2>
 
       <div class="container">
         <div class="row row-cols-1 row-cols-md-2 g-0">
@@ -262,11 +263,11 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <!-- ============== Our Packages =================== -->
-    <section class="packages-section">
-      <h2 class="h1 py-5 text-center">Our Packages</h2>
+    <section id="to-package" class="packages-section py-5">
+      <h2 class="h1 py-5 text-center ec-dark">Our Packages</h2>
 
       <div class="container">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 ec-card-row">
@@ -442,8 +443,8 @@
     </section>
 
     <!-- ============ Team Members ===================== -->
-    <section class="team-section">
-      <h2 class="h1 py-5 text-center text-dark">Our Members</h2>
+    <section id="to-team" class="team-section py-5">
+      <h2 class="h1 py-5 text-center ec-dark">Our Members</h2>
 
       <div class="container-fluid">
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-0">
@@ -628,8 +629,8 @@
     </section>
 
     <!-- ========== Frequently asked Questions ========== -->
-    <section class="frequently-asked-section">
-      <h2 class="h1 text-center text-black py-5">Frequently Asked Questions</h2>
+    <section id="to-question" class="frequently-asked-section py-5">
+      <h2 class="h1 text-center ec-black py-5">Frequently Asked Questions</h2>
 
       <div class="container">
         <div class="row">
